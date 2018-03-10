@@ -1,0 +1,80 @@
+/*全局的样式表，对所有的页面起作用*/
+/*
+    page 代表的是网页的可见区域，相当于html中body
+*/
+page{
+    /*设置一个统一的字体*/
+    font: bold 14px "微软雅黑";
+    color: #fff;
+    /*设置背景图片
+        在微信小程序中，不能直接使用项目内部的图片作为背景图片，
+        可以使用服务器中的图片
+        可以使用base64格式的图片
+    */
+    background-image: url("http://bpic.588ku.com/back_pic/04/14/92/985821457be288c.jpg!/fw/260/quality/90/unsharp/true/compress/true");
+
+    background-size: 100% 100%;
+}
+
+/*温馨提示字样样式*/
+.advice{
+  color:beige;  
+}
+
+.color1{
+  color:blanchedalmond;
+}
+
+/*设置天气信息页面的样式*/
+.outer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/*所有的内部容器*/
+.inner{
+    margin: 20px;   
+}
+
+/*设置基本信息*/
+.base_info text{
+    display: block;
+    text-align: right;
+}
+
+/*设置气象的信息*/
+.temp_info{
+    font-size: 30px;
+}
+
+/*设置气象信息的描述*/
+.desc{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/*设置气象指数*/
+.index_info{
+    background-color: rgba(f,f,0,0.5);
+    padding: 10px;
+}
+
+.index_info text{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*设置输入框的样式*/
+input{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+/*设置按钮的样式*/
+.search_btn{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+}
