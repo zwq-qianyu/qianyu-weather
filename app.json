@@ -1,0 +1,33 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/search/search",
+      "pages/info/info"
+    ],
+
+    "window": {
+      "navigationBarBackgroundColor": "#067890",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "浅鱼weather",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+
+    "tabBar": {
+      "selectedColor": "#5AC45A",
+      "borderStyle": "white",
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "weather info",
+        "iconPath": "src/image/wt.png",
+        "selectedIconPath": "src/image/wt-active.png"
+      },{
+        "pagePath": "pages/search/search",
+        "text": "choose city",
+        "iconPath": "src/image/city.png",
+        "selectedIconPath": "src/image/city-active.png"
+      }]
+    }
+
+}
