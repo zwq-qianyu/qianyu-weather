@@ -1,0 +1,4 @@
+<!-- 
+    include用于将一个页面包含进当前页面，相当于将那个页面的代码原封不动的复制过来
+-->
+<include src="/pages/index/index.wxml" />

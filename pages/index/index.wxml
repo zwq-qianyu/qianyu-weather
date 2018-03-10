@@ -1,0 +1,81 @@
+<!-- 首页 -->
+<!-- 外层的滚动容器 -->
+
+<block wx:if="{{wd && wd.status=='ok'}}">
+
+    <scroll-view scroll-y class="outer">
+        <!-- 基本信息，城市 日期。。。 -->
+        <view class="base_info inner">
+            <text style="font-size:18px">{{wd.city}}</text>
+            <text>{{wd.date}}</text>
+            <text>{{wd.upTime}} 更新</text>
+        </view>  
+
+        <!-- 天气情况的描述 -->
+        <view class="temp_info inner color1">
+            <text>{{wd.temp}}℃</text>
+            <text> {{wd.desc}}</text>
+            <text> {{wd.win}}</text>
+
+        </view>   
+
+        <view class="advice">
+            <text>来自浅鱼的生活小提示：</text>
+        </view>
+
+        <!-- 各种气象指数 -->
+        <view class="index_info inner">
+            <text>舒适度 : {{wd.lifestyle[0].brf}}</text>
+            <text>{{wd.lifestyle[0].txt}}</text>
+        </view>   
+
+        <view class="index_info inner">
+            <text>穿衣提醒 : {{wd.lifestyle[1].brf}}</text>
+            <text>{{wd.lifestyle[1].txt}}</text>
+        </view>   
+
+        <view class="index_info inner">
+            <text>感冒指数 : {{wd.lifestyle[2].brf}}</text>
+            <text>{{wd.lifestyle[2].txt}}</text>
+        </view>   
+
+        <view class="index_info inner">
+            <text>运动指数 : {{wd.lifestyle[3].brf}}</text>
+            <text>{{wd.lifestyle[3].txt}}</text>
+        </view>   
+
+        <view class="index_info inner">
+            <text>旅游出行 : {{wd.lifestyle[4].brf}}</text>
+            <text>{{wd.lifestyle[4].txt}}</text>
+        </view>   
+
+        <view class="index_info inner">
+            <text>紫外线 : {{wd.lifestyle[5].brf}}</text>
+            <text>{{wd.lifestyle[5].txt}}</text>
+        </view>   
+
+        <!---
+        <view class="index_info inner">
+            <text>洗车指数 : {{wd.lifestyle[6].brf}}</text>
+            <text>{{wd.lifestyle[6].txt}}</text>
+        </view>
+        -->   
+
+        <view class="index_info inner">
+            <text>空气污染 : {{wd.lifestyle[7].brf}}</text>
+            <text>{{wd.lifestyle[7].txt}}</text>
+        </view> 
+
+    </scroll-view>
+
+</block>
+
+<block wx:else>
+    <view>查询中......👀</view>
+
+    <view>如果长时间没反应，请联系我!</view>
+    <view>QQ：1347638091</view>
+    <view>邮箱：qianyu_blog@163.com</view>
+
+    <view>如果你要查询国外的天气，放弃吧!(没钱买api数据)</view>
+</block>    
